@@ -7,6 +7,7 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
 import { toString } from 'mdast-util-to-string'
+import { normalizeSitemapDate } from './sitemap-date'
 
 export const RESEARCH_SLUG = 'ai-telecalling-in-india'
 export const RANCHI_SLUG = 'top-it-companies-ai-startups-technology-institutes-ranchi'
@@ -45,8 +46,8 @@ export function getResearchArticle(slug = RESEARCH_SLUG) {
     description: String(data.description), seoTitle: String(data.seoTitle || (slug === RANCHI_SLUG ? 'Top IT Companies & AI Startups in Ranchi | Vaiket' : slug === INDIA_SLUG ? 'India Business Communication Ecosystem | Vaiket' : data.title)),
     seoDescription: String(data.seoDescription || data.description), status: String(data.status),
     researchCutoff: data.researchCutoff instanceof Date ? data.researchCutoff.toISOString().slice(0, 10) : String(data.researchCutoff), content, headings, words, referenceCount,
-    publishedAt: data.publishedAt ? String(data.publishedAt) : undefined,
-    updatedAt: data.updatedAt ? String(data.updatedAt) : undefined,
+    publishedAt: normalizeSitemapDate(data.publishedAt),
+    updatedAt: normalizeSitemapDate(data.updatedAt),
     readingMinutes: Math.ceil(words / 200),
   }
 }

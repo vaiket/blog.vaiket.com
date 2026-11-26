@@ -8,7 +8,7 @@ description: "An in-depth guide to how AI voice agents work in India, from licen
 seoTitle: "AI Telecalling in India: SIP Trunking, Voice AI, STT, TTS & Telecom Guide | Vaiket"
 seoDescription: "Learn how to build and deploy AI telecalling in India: SIP trunks, PSTN, STT, TTS, real-time agents, TRAI rules, architecture, pricing and practical business use cases."
 status: published
-publishedAt: 2026-11-25
+publishedAt: "2026-11-25"
 researchCutoff: 2026-11-25
 estimatedReadingMinutes: 120
 ---
