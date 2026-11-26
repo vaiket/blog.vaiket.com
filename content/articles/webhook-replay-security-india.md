@@ -1,0 +1,61 @@
+---
+title: >-
+  Communication Webhook Replay Security in India: Signatures, Idempotency and
+  Recovery
+slug: webhook-replay-security-india
+description: >-
+  A developer guide to securing communication webhooks with signature checks,
+  replay windows, idempotent processing, tenant isolation and recovery.
+seoTitle: Webhook Replay Security India | Communication API Developer Guide
+seoDescription: >-
+  Secure WhatsApp and CPaaS webhooks using signature validation, timestamps,
+  replay protection, idempotent state transitions and dead letters.
+author: Vaiket Research & Editorial
+category: Developers
+tags:
+  - Webhooks
+  - API Security
+  - CPaaS
+  - Idempotency
+researchCutoff: '2026-11-26'
+image: /vaiket-cloud-infrastructure-blue.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# Communication Webhook Replay Security in India: Signatures, Idempotency and Recovery
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** This is a defensive engineering guide. Exact signature headers, timestamp rules and provider retry behavior must be confirmed in the current documentation for the selected platform.
+
+## Authenticate before parsing
+
+Treat the raw request body as the signed input. Verify the provider signature with the correct tenant secret before parsing or enqueueing the event. Apply a bounded timestamp or nonce policy where the provider documents one, reject malformed requests, rotate secrets safely and avoid logging the signature or full sensitive payload.
+
+Authentication alone does not stop a valid event from being delivered twice. Store provider event ID, tenant, event type, first-seen time and processing status. A duplicate should return a safe acknowledgement without repeating a message, refund, CRM write or state transition.
+
+## Make state transitions deterministic
+
+For each event, validate the expected entity and version. Ignore or quarantine an older status rather than allowing it to overwrite a newer state. Separate “received”, “validated”, “enqueued”, “processed” and “side effect complete”. If a worker fails after a side effect but before marking completion, the idempotency key must make the retry safe.
+
+## Recovery and testing
+
+Use a dead-letter queue with tenant and event metadata, an operator replay action, maximum retry limits and a reconciliation report. Test invalid signature, old timestamp, duplicate delivery, out-of-order status, wrong tenant, malformed payload, provider timeout and secret rotation. Inspect whether a replay can send a second customer message or expose another tenant's event.
+
+Keep security evidence: rule version, decision, event ID, operator and final result. A green webhook endpoint is not proof of correct business processing.
+
+## Operational ownership
+
+Document who rotates secrets, who can replay a dead letter, what evidence is needed before replay, how a tenant is quarantined and how a customer-facing correction is issued. Alert on signature failures, duplicate side effects, rising dead-letter age and cross-tenant authorization failures. Security is incomplete if the team can detect a replay but cannot recover without manual database edits.
+
+## Vaiket boundary
+
+Vaiket's [API documentation](https://app.vaiket.com/docs) can be checked for current webhook, authentication, event and retry surfaces. Do not infer a particular implementation from this generic design or from future product direction.
+
+## Sources and limits
+
+Official platform documentation and original defensive engineering analysis inform this draft. Perform a provider-specific security review before production.
+

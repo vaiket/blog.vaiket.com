@@ -1,0 +1,64 @@
+---
+title: Communication API Secrets and Webhook Security for Indian Teams
+slug: communication-api-secrets-webhook-security-india
+description: >-
+  A practical security checklist for WhatsApp, RCS, SMS and voice API
+  credentials, webhook endpoints, replay protection and incident response.
+seoTitle: Communication API Webhook Security India | Developer Guide
+seoDescription: >-
+  Secure communication APIs in India with secret management, signature checks,
+  replay protection, least privilege, logging, rotation and incident response.
+author: Vaiket Research & Editorial
+category: Developers
+tags:
+  - Communication APIs
+  - Webhook Security
+  - Secrets
+  - Developer Guide
+researchCutoff: '2026-11-26'
+image: /vaiket-cloud-infrastructure-blue.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# Communication API Secrets and Webhook Security for Indian Teams
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Security controls must be adapted to the provider, framework, infrastructure and threat model. This guide is not a security certification or an assurance that a product implements every control.
+
+## Keep credentials out of the application surface
+
+Store API keys, signing secrets and database credentials in a managed secret store or protected runtime configuration. Never put them in browser JavaScript, Markdown examples, screenshots, logs or Git history. Give each environment and service a separate credential with the smallest required permission. Rotate keys through a tested procedure, not during an incident for the first time.
+
+## Verify webhooks before processing them
+
+Use the provider's signature or verification mechanism. Check timestamp freshness where supported. Apply replay protection and an idempotency key before creating a ticket, sending a reply or changing a customer record. Return a fast acknowledgement only after the event is durably queued; retry processing from a dead-letter queue with bounded backoff.
+
+Meta's [WhatsApp webhook documentation](https://developers.facebook.com/docs/graph-api/webhooks/getting-started/webhooks-for-whatsapp/) is the platform reference for WhatsApp account events. The [WhatsApp overview](https://developers.facebook.com/documentation/business-messaging/whatsapp/overview) links the related authentication and messaging concepts. Provider-specific signature formats and retry semantics must be checked separately.
+
+## Security acceptance tests
+
+| Test | Expected result |
+|---|---|
+| Missing signature | Request rejected and no business action occurs |
+| Stale timestamp | Request rejected or quarantined |
+| Duplicate event | One business effect, one auditable event record |
+| Unknown field | Parser tolerates safely or rejects with an alert |
+| Secret rotation | New key works; old key fails after cutover |
+| Log review | Secrets and full personal data are not exposed |
+
+## Incident playbook
+
+Define who can disable a route, revoke a key, inspect events, notify the provider, restore from a queue and communicate with affected customers. Record detection, containment, evidence, recovery and follow-up. A business should be able to stop outbound messaging without taking the entire customer-support system offline.
+
+## Vaiket verification boundary
+
+Current Vaiket API authentication, webhook signing, log retention and support procedures must be confirmed from [Vaiket API documentation](https://app.vaiket.com/docs) and a technical security review. This article describes controls to ask for; it does not claim a Vaiket implementation.
+
+## Sources and limits
+
+This developer guide uses official Meta references and original security acceptance tests. No penetration test or provider security audit was performed.
+

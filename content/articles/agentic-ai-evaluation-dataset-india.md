@@ -1,0 +1,46 @@
+---
+title: Agentic AI Evaluation Dataset for Indian Business Workflows
+description: >-
+  How to build a small but meaningful evaluation set for agentic workflows using
+  Indian languages, business policies, failures and tool boundaries.
+seoTitle: Agentic AI Evaluation Dataset India | Business Workflow Testing
+seoDescription: >-
+  Build an agentic AI evaluation set with Indian data formats, policy
+  exceptions, tool failures, approvals and human handoffs.
+slug: agentic-ai-evaluation-dataset-india
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: Artificial Intelligence
+tags:
+  - Agentic AI
+  - Evaluation
+  - India
+  - AI Governance
+author: Vaiket Research
+featuredImage: /luminous-ai-wave-mesh.png
+imageAlt: Agentic AI evaluation network
+publishedAt: '2026-11-26'
+sources:
+  - 'https://www.nist.gov/itl/ai-risk-management-framework'
+---
+
+# Agentic AI Evaluation Dataset for Indian Business Workflows
+
+An evaluation set should look like the work a team actually receives, including ambiguity, incomplete records and requests the agent must refuse. A clean demo dataset measures very little.
+
+## Include Indian operating detail
+
+Use Indian phone formats, rupee amounts, GST references, pincode/serviceability, Hindi-English code switching, regional working hours and common duplicate customer records. Label the expected tool call, approval requirement, safe refusal and human route.
+
+## Score more than success
+
+Track task completion, incorrect tool use, unsafe commitment, escalation quality, latency, explanation quality and recovery after a failed API. Keep a versioned dataset and do not include real customer data without authorization and redaction.
+
+Vaiket's [Agentic AI research](/posts/the-rise-of-agentic-ai) is a conceptual starting point. A production benchmark requires a defined dataset, test method and current implementation.
+
+## Sources and further reading
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- [Vaiket Agentic AI research](/posts/the-rise-of-agentic-ai)

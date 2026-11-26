@@ -1,0 +1,70 @@
+---
+title: 'AI Telecalling QA Scorecard for Indian Businesses: What to Review'
+slug: ai-telecalling-qa-scorecard-india
+description: >-
+  A practical QA scorecard for evaluating AI telecalling calls in India across
+  language, policy, workflow accuracy, latency and handoff.
+seoTitle: AI Telecalling QA Scorecard India | Voice AI Evaluation
+seoDescription: >-
+  Evaluate AI telecalling quality in India with a repeatable scorecard covering
+  consent, speech, answers, CRM actions, latency, safety and human escalation.
+author: Vaiket Research & Editorial
+category: AI Telecalling
+tags:
+  - AI Telecalling
+  - QA
+  - Voice AI
+  - Evaluation
+researchCutoff: '2026-11-26'
+image: /vaiket-cloud-infrastructure-blue.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# AI Telecalling QA Scorecard for Indian Businesses: What to Review
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** No universal pass score exists. Weight the scorecard for the business risk and use consented or synthetic calls for evaluation.
+
+## Score behaviours, not voice attractiveness
+
+Review whether the agent identified itself, respected the purpose, understood names and numbers, answered only from approved knowledge, handled interruption, recognised uncertainty, updated the right CRM field and offered a human route. A pleasant voice can still produce an unsafe business action.
+
+## Example scorecard
+
+| Dimension | Evidence | Fail condition |
+|---|---|---|
+| Consent and identity | Notice, purpose and recipient match | Call continues after opt-out |
+| Language | Hindi, Hinglish, accent and numbers | Critical value changed |
+| Turn-taking | Interruption and silence handling | Talks over customer repeatedly |
+| Grounding | Approved source or workflow state | Invents price or promise |
+| Action | CRM, task or callback record | Duplicate or wrong update |
+| Handoff | Context and reason delivered | Customer must repeat everything |
+
+Use a fixed script set plus adversarial cases. Record model/version, route, device, date, prompt or workflow version and reviewer notes. Do not publish the score as a market benchmark unless the test set and method are public.
+
+TRAI's [regulatory index](https://www.trai.gov.in/release-publication/regulations) should be checked for current commercial communication requirements; the scorecard itself is not legal authorization.
+
+## Build a review sample
+
+Stratify the sample by language, campaign, call outcome, transfer outcome, duration and failure reason. Review completed calls as well as abandoned calls and calls marked successful. Keep a calibration set so the scorecard is not changed after every difficult example. Redact phone numbers and sensitive fields before review.
+
+## Score with evidence
+
+For each dimension, store the timestamp or transcript excerpt supporting the score: disclosure, permission, factual accuracy, listening, language fit, required-field capture, objection handling, escalation, closure and data handling. A five-point score without evidence is a preference, not QA. Use “not applicable” where the call never reached a state rather than assigning zero automatically.
+
+## Turn scores into controls
+
+Define actions for severe failures: pause a campaign after repeated misrepresentation, route a complaint to a supervisor, suppress a contact after a valid opt-out and block a flow when a required disclosure is missing. Track inter-rater agreement and correction categories. Do not publish an aggregate quality number without sample size, period and scoring method.
+
+## Vaiket verification boundary
+
+Ask Vaiket for a current pilot plan, supported language list, transfer behaviour and exportable logs before calling a capability verified. This article does not report a Vaiket score.
+
+## Sources and limits
+
+The guide is original QA methodology informed by public TRAI material. Run a route-specific review before publication or purchase.
+

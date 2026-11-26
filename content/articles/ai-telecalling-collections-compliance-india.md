@@ -1,0 +1,63 @@
+---
+title: 'AI Telecalling for Collections in India: Guardrails Before Automation'
+slug: ai-telecalling-collections-compliance-india
+description: >-
+  A practical control framework for evaluating AI-assisted collections calls in
+  India without making unsupported legal or recovery claims.
+seoTitle: AI Telecalling Collections India | Guardrails and Human Review
+seoDescription: >-
+  Evaluate AI collections calling with identity, permission, disclosure,
+  escalation, recording, opt-out and human-review controls.
+author: Vaiket Research & Editorial
+category: AI Telecalling
+tags:
+  - AI Telecalling
+  - Collections
+  - Voice AI
+  - Compliance
+researchCutoff: '2026-11-26'
+image: /luminous-ai-wave-mesh.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# AI Telecalling for Collections in India: Guardrails Before Automation
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Collections is a regulated and sensitive use case. This article provides a technical evaluation model, not recovery advice or a statement that any provider is authorised for a particular collection activity.
+
+## Start with a safe call purpose
+
+The first question is not whether an AI agent can speak Hindi or English. It is whether the business can prove why the call is being made, who owns the account, what the caller is allowed to say and when a human must take over. Limit the automated flow to approved reminders, payment-channel guidance, callback scheduling and case capture. Do not let the model negotiate a settlement, threaten a customer, disclose a debt to a third party or invent a due amount.
+
+Check current [TRAI regulations](https://www.trai.gov.in/release-publication/regulations) and the organisation's sector policy before launch. A vendor demo cannot establish regulatory permission.
+
+## Identity and disclosure
+
+Use a non-sensitive reference and a controlled verification step before revealing account context. A shared family number, wrong number, caregiver or third-party employee may answer the phone. The agent should identify the organisation and purpose without disclosing the customer's financial status to an unauthorised person. If identity cannot be established, it should offer a safe callback or official channel.
+
+## Guardrail state machine
+
+Use explicit states: opening, permission, verification, approved reminder, customer question, escalation and closure. Each state needs allowed phrases, forbidden actions, maximum attempts and a human route. The model may classify a response, but a policy service should decide whether a payment link, account detail or callback task can be issued.
+
+Persist the call ID, consent or permission result, language, verification outcome, script version, transfer event and disposition. Store customer statements separately from model inferences. If a caller says the amount is wrong, mark a dispute and route it; do not allow the model to argue from stale data.
+
+## QA and incident tests
+
+Test a silent caller, angry caller, multilingual caller, wrong number, shared device, opt-out, request for a human, suspected fraud, wrong due amount and repeated failed verification. Review a sample of successful and abandoned calls. Track disclosure completion, verification failure, complaint escalation, opt-out correctness, transfer success and repeat contact. Do not publish a recovery or conversion percentage without a dated sample and methodology.
+
+## Pilot decision gate
+
+Start with a small, consented or authorised cohort and a human owner for every exception. Freeze the pilot if a call misidentifies a customer, discloses a financial detail, ignores an opt-out, invents an amount or fails to preserve an escalation. Review recordings and transcripts with restricted access, document the evaluator and remove unnecessary personal data from QA exports.
+
+## Vaiket boundary
+
+Vaiket may be evaluated for communication orchestration and AI telecalling workflows where current controls, integrations and support fit the use case. Confirm the live product boundary through [API documentation](https://app.vaiket.com/docs); no collections-authorisation, recovery-rate or compliance certification claim is made.
+
+## Sources and limits
+
+TRAI's regulations index, original call-state design and platform documentation inform this draft. Obtain legal, compliance and sector approval before any collections pilot.
+

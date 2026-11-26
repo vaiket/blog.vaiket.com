@@ -1,0 +1,61 @@
+---
+title: 'Agentic AI Observability for Indian Businesses: Traces, Tools and Outcomes'
+slug: agentic-ai-observability-india
+description: >-
+  A practical observability model for agentic AI workflows covering plans, tool
+  calls, approvals, failures and business outcomes.
+seoTitle: Agentic AI Observability India | Workflow Tracing Guide
+seoDescription: >-
+  Observe agentic AI workflows with traces for prompts, plans, tools, approvals,
+  retries, human corrections, cost and business outcomes.
+author: Vaiket Research & Editorial
+category: Artificial Intelligence
+tags:
+  - Agentic AI
+  - Observability
+  - Tracing
+  - Automation
+researchCutoff: '2026-11-26'
+image: /luminous-ai-wave-mesh.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# Agentic AI Observability for Indian Businesses: Traces, Tools and Outcomes
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Agentic AI systems vary widely. This is an observability design, not a claim that a vendor exposes every field or that more telemetry automatically makes a workflow safe.
+
+## Trace the decision path
+
+Record the request, retrieved context, plan version, tool permission, tool input, approval, result, retry, human correction and final outcome. Redact personal data and secrets. A final answer without the path that produced it is difficult to audit or improve.
+
+NIST's [AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) is a public risk reference; teams should translate it into their own trace, owner and incident controls.
+
+## Metrics that help operators
+
+Track tool-error rate, approval wait, policy stop rate, retry count, human correction, grounded-answer rate, cost per completed workflow and unresolved outcome. Separate model latency from external API latency and queue delay. Never report an unmeasured “accuracy” number.
+
+## Retention and access
+
+Set different retention for prompts, tool inputs, outputs, audit events and business records. Give support staff the minimum view needed. Provide an export and deletion procedure for the tenant and test it with redacted data.
+
+## Trace design and risk metrics
+
+Keep trace identifiers, tool calls, policy decisions, model version, input classification, output, human override and final business result in separate fields. Restrict transcript access and redact secrets before sending traces to debugging systems. Set retention by purpose: operational troubleshooting need not retain the same data as an audit record.
+
+At minimum record `run_id`, tenant, initiating event, task version, tool name, input hash, authorization decision, result status, latency, retry count, human-review state and terminal outcome. Classify failures as tool, policy, data quality, model uncertainty or external provider failures. Monitor tool-error rate, retries, policy-block rate, unapproved side effects, stale-data decisions, rollback time and unresolved runs.
+
+Run replay tests with synthetic or redacted cases before changing a prompt, model or tool permission. Keep a change record and owner for every production workflow. Falling latency is not an improvement if approval gates are being skipped.
+
+## Vaiket boundary
+
+Vaiket's [Agentic AI page](/product/agentic-ai) describes a research and future-capability direction. Confirm current tracing, permissions and workflow availability in [Vaiket documentation](https://app.vaiket.com/docs).
+
+## Sources and limits
+
+This is original observability analysis informed by NIST's public framework. No production Vaiket trace or benchmark is claimed.
+

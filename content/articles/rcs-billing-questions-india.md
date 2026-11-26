@@ -1,0 +1,67 @@
+---
+title: 'RCS Business Messaging Billing in India: Questions to Ask Before Launch'
+slug: rcs-billing-questions-india
+description: >-
+  A buyer-led checklist for understanding RCS Business Messaging billing, agent
+  fees, message events, fallback and implementation costs in India.
+seoTitle: RCS Business Messaging Billing India | Buyer Checklist
+seoDescription: >-
+  Understand RCS billing in India by asking about agents, messages,
+  conversations, fallback, carrier reach, analytics, support, taxes and
+  implementation.
+author: Vaiket Research & Editorial
+category: RCS
+tags:
+  - RCS Pricing
+  - RCS Business Messaging
+  - Billing
+  - India
+researchCutoff: '2026-11-26'
+image: /neon-ai-commerce-landscape.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# RCS Business Messaging Billing in India: Questions to Ask Before Launch
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** RCS commercial terms vary by provider, agent, route and carrier. This is a quote-reconciliation framework, not a current Indian rate card.
+
+## Separate the cost layers
+
+Ask whether the proposal separates agent setup, verification, platform subscription, message or session charges, media, analytics, support, fallback SMS, implementation, tax and minimum commitments. A low per-message number can hide a monthly minimum, carrier dependency or separate fallback bill.
+
+Google's [RCS Business Messaging documentation](https://developers.google.com/business-communications/rcs-business-messaging/) explains agents, messages and events, but it is not a provider price list. Record the billing unit, region, currency, tax treatment, effective date and event used for invoicing.
+
+## Invoice reconciliation sheet
+
+| Field | Ask for evidence |
+|---|---|
+| Agent | Agent ID, business identity and verification fee |
+| Message | Accepted, sent, delivered or billable event |
+| Media | Size, hosting and rich-card treatment |
+| Fallback | SMS trigger, route and price |
+| Support | SLA, implementation and change fees |
+| Exit | Export, notice period and data deletion |
+
+Run a small pilot and reconcile provider events to the invoice before scaling. Never model cost from delivery alone when fallback and support are material.
+
+## Reconciliation and buyer questions
+
+Create one row per billing event with agent ID, customer key, message ID, event type, traffic category, conversation window, currency, tax treatment, provider invoice reference and reconciliation status. Keep provider and ingestion timestamps; delayed reports otherwise look like missing events. Match the invoice to raw events before calculating effective cost.
+
+Request the current regional rate card, effective date, test allowances, treatment of undelivered messages, fallback charges, media treatment, taxes, invoice granularity and dispute window. Ask whether the selected agent type is charged per message, event or conversation. Model notification-only, two-way support and fallback-heavy scenarios, including engineering and operator work.
+
+Platform documentation explains behavior; a dated provider quote or invoice is evidence for a payable amount. Re-check both before procurement or publication.
+
+## Vaiket boundary
+
+Vaiket's current RCS availability, route and pricing must be confirmed in writing; the [RCS product page](/product/rcs-business-messaging) is a capability explainer unless the service is explicitly contracted.
+
+## Sources and limits
+
+Official Google documentation and original buyer analysis inform this guide. No provider rate or Vaiket quote is asserted.
+

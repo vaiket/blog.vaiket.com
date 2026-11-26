@@ -1,0 +1,46 @@
+---
+title: AI Calling Voice Latency and Turn-Taking in India
+description: >-
+  What makes an AI calling conversation feel slow, where latency enters the
+  stack and how Indian teams can measure turn-taking.
+seoTitle: AI Calling Voice Latency and Turn-Taking India | Vaiket
+seoDescription: >-
+  Measure AI voice latency across telecom, streaming speech, model response,
+  text-to-speech and interruption handling.
+slug: ai-calling-voice-latency-india
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: AI Telecalling
+tags:
+  - AI Calling
+  - Voice AI
+  - Latency
+  - India
+author: Vaiket Research
+featuredImage: /neon-ai-commerce-landscape.png
+imageAlt: Real-time AI calling workflow
+publishedAt: '2026-11-26'
+sources:
+  - 'https://www.twilio.com/docs/voice/media-streams/websocket-messages'
+  - 'https://docs.sarvam.ai/'
+---
+
+# AI Calling Voice Latency and Turn-Taking in India
+
+“Fast” voice AI is a chain of delays: call setup, media transport, speech endpointing, recognition, reasoning, tool access and synthesis. Measure each layer rather than reporting one average.
+
+## What to measure
+
+Record post-dial delay, end-of-speech to first audio, interruption recovery, tool-call duration and transfer time. Test mobile networks, narrowband audio, silence, code switching and a caller who speaks over the agent. A low model latency does not fix a slow carrier or a blocked CRM request.
+
+## Product decisions
+
+Use short confirmations, streaming where supported, bounded tools and a human fallback. Do not cut safety checks merely to reduce response time. Publish sample size, audio condition and percentile measurements if you ever publish a benchmark.
+
+## Sources and further reading
+
+- [Twilio Media Streams WebSocket messages](https://www.twilio.com/docs/voice/media-streams/websocket-messages)
+- [Sarvam documentation](https://docs.sarvam.ai/)
+- [Vaiket AI telecalling research](/posts/ai-telecalling-in-india)

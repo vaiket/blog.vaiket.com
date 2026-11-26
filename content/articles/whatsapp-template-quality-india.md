@@ -1,0 +1,53 @@
+---
+title: WhatsApp Template Quality and Approval in India
+description: >-
+  How Indian businesses can design, test and govern WhatsApp message templates
+  without confusing approval with delivery or customer consent.
+seoTitle: WhatsApp Template Quality and Approval in India | Vaiket
+seoDescription: >-
+  A practical guide to WhatsApp template variables, consent, testing, quality
+  signals and operational governance for Indian businesses.
+slug: whatsapp-template-quality-india
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: WhatsApp
+tags:
+  - WhatsApp Templates
+  - Consent
+  - Marketing
+  - India
+author: Vaiket Research
+featuredImage: /futuristic-neon-whatsapp-glass-interface.png
+imageAlt: WhatsApp business messaging interface
+publishedAt: '2026-11-26'
+sources:
+  - >-
+    https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/
+  - 'https://www.trai.gov.in/tcccpr'
+---
+
+# WhatsApp Template Quality and Approval in India
+
+A template being approved does not mean a campaign is useful, welcome or compliant. Indian businesses should treat templates as governed product copy: a clear purpose, a known audience, an expiry or next step and an easy route to human help.
+
+## Build around one customer purpose
+
+Start with the event that justifies the message: order update, appointment reminder, requested follow-up, authentication or promotion. Keep variables typed and bounded. A customer name, order identifier and date should come from a trusted record; do not allow free-form operator text to enter a high-volume template without review. Separate utility and promotional use cases so reporting and suppression remain explainable.
+
+## Test the rendered message
+
+Use Hindi, English and code-mixed test values, long names, missing values, rupee amounts, Indian phone numbers and a link failure. Check what the customer sees on small screens. Test the human handoff and opt-out path before the first campaign. Record the template version, approval date, audience rule and owner so a complaint can be investigated.
+
+## Quality is a feedback loop
+
+Track delivery, read, replies, blocks, opt-outs, support complaints and template pauses as separate signals. A high read rate does not justify sending more often if the support queue grows. Review frequency caps and quiet hours for the business's actual customer context. Regulatory and platform rules change, so retain a review date rather than treating a template as permanent.
+
+Vaiket's [WhatsApp product page](https://www.vaiket.com/product/whatsapp) describes campaign and team workflows. The [API docs](https://app.vaiket.com/docs) are the developer reference; current template controls and plan limits should be confirmed for the account.
+
+## Sources and further reading
+
+- [Meta message templates](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/)
+- [TRAI TCCCPR resources](https://www.trai.gov.in/tcccpr)
+- [Vaiket API documentation](https://app.vaiket.com/docs)

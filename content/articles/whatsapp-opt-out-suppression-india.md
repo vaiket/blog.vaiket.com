@@ -1,0 +1,46 @@
+---
+title: WhatsApp Opt-Out and Suppression Design for Indian Businesses
+description: >-
+  A practical design for recording opt-outs, synchronizing suppression state and
+  preventing unwanted WhatsApp marketing messages.
+seoTitle: WhatsApp Opt-Out and Suppression Design India | Vaiket
+seoDescription: >-
+  Build safer WhatsApp campaigns with opt-out capture, suppression
+  synchronization, audit records and human support.
+slug: whatsapp-opt-out-suppression-india
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: WhatsApp
+tags:
+  - WhatsApp Marketing
+  - Opt-Out
+  - Consent
+  - India
+author: Vaiket Research
+featuredImage: /futuristic-neon-whatsapp-glass-interface.png
+imageAlt: WhatsApp consent and suppression workflow
+publishedAt: '2026-11-26'
+sources:
+  - 'https://www.trai.gov.in/tcccpr'
+  - 'https://whatsappbusiness.com/policy/'
+---
+
+# WhatsApp Opt-Out and Suppression Design for Indian Businesses
+
+An opt-out is an operational state, not a note in a spreadsheet. It must stop the next promotional action across campaign tools, CRM automations and manual exports.
+
+## Capture the event
+
+Store the customer's identifier, channel, timestamp, source, scope and the system that accepted the request. Distinguish promotional suppression from a request for human support. Synchronize the state before the next send and make the suppression list visible to operators without exposing unnecessary personal data.
+
+## Test the race condition
+
+Send an opt-out while a campaign is queued, retry a failed webhook and remove a contact from the CRM. The expected result is no new promotional message. Add an audit event and a manual correction path, but do not let a correction silently erase the original request.
+
+## Sources and further reading
+
+- [WhatsApp Business policy](https://whatsappbusiness.com/policy/)
+- [TRAI TCCCPR resources](https://www.trai.gov.in/tcccpr)
+- [Vaiket API documentation](https://app.vaiket.com/docs)

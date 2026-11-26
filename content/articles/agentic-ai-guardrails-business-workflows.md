@@ -1,0 +1,49 @@
+---
+title: Agentic AI Guardrails for Indian Business Workflows
+description: >-
+  A practical design framework for permissions, approvals, observability,
+  retries and human review in agentic business automation.
+seoTitle: Agentic AI Guardrails for Business Workflows | Vaiket
+seoDescription: >-
+  Design safer agentic AI workflows with tool permissions, approval gates, stop
+  conditions, audit logs and measurable evaluation.
+slug: agentic-ai-guardrails-business-workflows
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: Artificial Intelligence
+tags:
+  - Agentic AI
+  - Guardrails
+  - Automation
+  - Governance
+author: Vaiket Research
+featuredImage: /luminous-ai-wave-mesh.png
+imageAlt: Luminous AI workflow mesh
+publishedAt: '2026-11-26'
+sources:
+  - 'https://www.nist.gov/itl/ai-risk-management-framework'
+---
+
+# Agentic AI Guardrails for Indian Business Workflows
+
+An agentic workflow should have more structure than a chatbot. It needs a goal, bounded tools, permitted data, stop conditions, a human owner and an audit trail. The more a workflow can change customer or financial state, the narrower its permissions should be.
+
+## Permission the action, not only the model
+
+Separate read, propose and commit permissions. Let an agent retrieve a lead and propose a follow-up before allowing a human-approved send. Use scoped service accounts, tenant boundaries, allow-listed tools and field-level validation. A prompt instruction is not a security boundary.
+
+## Make failures observable
+
+Log the plan, tool call, result, retry, approval and final outcome with sensitive values redacted. Add idempotency to external writes and a dead-letter path for repeated failure. Stop when the model is uncertain, the source is stale, the customer opts out or a high-impact condition is detected.
+
+## Evaluate with real work
+
+Use representative Indian phone formats, code-mixed messages, working hours, policy exceptions and CRM duplicates. Score task success, unsafe action rate, escalation quality, latency and operator correction. Vaiket's [Agentic AI research](/posts/the-rise-of-agentic-ai) is a conceptual guide; current autonomous product availability should be confirmed separately.
+
+## Sources and further reading
+
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- [Vaiket Agentic AI research](/posts/the-rise-of-agentic-ai)
+- [Vaiket API documentation](https://app.vaiket.com/docs)

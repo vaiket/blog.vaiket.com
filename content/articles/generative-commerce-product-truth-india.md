@@ -1,0 +1,48 @@
+---
+title: Generative Commerce Product Truth for Indian Retail
+description: >-
+  How Indian retailers can use generative AI for product discovery without
+  inventing stock, price, delivery promises or customer eligibility.
+seoTitle: Generative Commerce Product Truth in India | Vaiket
+seoDescription: >-
+  Build safer generative commerce with authoritative catalogues, price checks,
+  approval gates, audit trails and human support.
+slug: generative-commerce-product-truth-india
+status: published
+reviewStatus: editorial approved
+researchCutoff: '2026-11-26'
+updatedAt: '2026-11-26'
+category: Commerce
+tags:
+  - Generative Commerce
+  - Retail
+  - AI
+  - Product Data
+author: Vaiket Research
+featuredImage: /neon-ai-commerce-landscape.png
+imageAlt: Generative commerce product discovery
+publishedAt: '2026-11-26'
+sources:
+  - 'https://www.vaiket.com/product/whatsapp'
+  - 'https://app.vaiket.com/docs'
+---
+
+# Generative Commerce Product Truth for Indian Retail
+
+Generative commerce is useful when it shortens discovery while keeping product truth authoritative. The model can interpret a vague request, ask a clarifying question and explain a recommendation. It should not invent inventory, price, delivery date, discount eligibility or return policy.
+
+## Separate language from truth
+
+Keep catalogue, stock, price, tax, serviceability and policy in controlled systems. Give the model a read tool with a timestamp and source identifier. If two systems disagree, say that availability needs confirmation. Require customer confirmation before any purchase-affecting action and log the source records used.
+
+## Indian operating details
+
+Test rupee amounts, COD rules, Indian addresses, regional working hours, Hindi-English requests, pincode serviceability and product names that contain model numbers. Design human support for damaged orders, payment disputes and unavailable stock. Track recommendation acceptance, correction rate, support escalation and stale-data incidents instead of claiming generic conversion uplift.
+
+Vaiket's [WhatsApp product page](https://www.vaiket.com/product/whatsapp) describes conversational commerce concepts. Current commerce, Agentic AI and channel capabilities should be demonstrated and confirmed before a buyer treats them as live product commitments.
+
+## Sources and further reading
+
+- [Vaiket WhatsApp product page](https://www.vaiket.com/product/whatsapp)
+- [Vaiket API documentation](https://app.vaiket.com/docs)
+- [Vaiket generative commerce research](/posts/generative-commerce-india)

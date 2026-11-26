@@ -1,0 +1,77 @@
+---
+title: 'WhatsApp Message Template Governance in India: A Practical Review System'
+slug: whatsapp-message-template-governance-india
+description: >-
+  A practical system for drafting, approving, versioning and monitoring WhatsApp
+  Business message templates for Indian teams.
+seoTitle: WhatsApp Message Template Governance in India | Vaiket
+seoDescription: >-
+  Learn how Indian teams can govern WhatsApp templates with consent, category
+  checks, variables, review evidence, versioning and rollback.
+author: Vaiket Research & Editorial
+category: WhatsApp
+tags:
+  - WhatsApp Templates
+  - WhatsApp Business API
+  - Consent
+  - Governance
+researchCutoff: '2026-11-26'
+image: /futuristic-neon-whatsapp-glass-interface.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# WhatsApp Message Template Governance in India: A Practical Review System
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Template categories, review decisions, quality signals and pricing rules can change. This is a governance method, not a promise of approval or delivery performance. Confirm the current Meta policy, account state and provider implementation before sending commercial communication.
+
+## Why template governance matters
+
+An approved template is not automatically a good customer message. A team can still send the wrong audience, use an ambiguous variable, fail to honour an opt-out or make a utility message look promotional. Governance connects the message copy to its purpose, consent evidence, owner, version and outcome.
+
+Meta's [WhatsApp Business Platform overview](https://developers.facebook.com/documentation/business-messaging/whatsapp/overview) documents templates, messaging, webhooks and pricing as separate platform concerns. The [interactive template documentation](https://developers.facebook.com/docs/whatsapp/api/messages/message-templates/interactive-message-templates/) shows that buttons and parameters have defined API structures. Treat both as implementation references, not as a substitute for a current policy review.
+
+## A five-step review workflow
+
+1. **State the purpose.** Write one sentence describing the customer action and why the recipient expects it.
+2. **Classify the message.** Record the proposed category and the evidence supporting that classification. Do not relabel a promotion as utility merely to seek easier delivery.
+3. **Test variables.** Define allowed values, maximum lengths, language rules, fallback text and what happens when a field is missing.
+4. **Review consent and suppression.** Link the audience query to opt-in evidence and exclude current suppression records before dispatch.
+5. **Version and observe.** Store the submitted copy, approval response, send cohort, delivery events, complaints and rollback decision.
+
+## Template review sheet
+
+| Field | Minimum evidence |
+|---|---|
+| Business purpose | Customer action, workflow owner and expected response |
+| Audience | Source, consent timestamp, purpose and suppression check |
+| Variables | Schema, examples, validation and missing-value behaviour |
+| Buttons | Destination allow-list, tracking and human fallback |
+| Language | Locale, translation owner and code-mixed review |
+| Monitoring | Delivery, read, reply, block, complaint and opt-out events |
+
+## What an Indian team should retain
+
+Keep a copy of the approved payload and the exact content dispatched. Retain the template name, language, provider response, account identifier and campaign or workflow ID. If the message is promotional, align the suppression logic with the applicable telecom and customer-preference process; TRAI's [commercial communications regulations page](https://www.trai.gov.in/release-publication/regulations) is the place to check current amendments rather than relying on an old blog post.
+
+## Vaiket implementation boundary
+
+Vaiket can be evaluated as the workflow layer for templates, automation, team review and connected business communication. Current API access, template operations, pricing and availability must be confirmed in [Vaiket documentation](https://app.vaiket.com/docs) and a written product conversation. This article does not claim a live template feature or Meta approval outcome.
+
+## Publication checklist
+
+- [ ] Purpose and category reviewed by an owner.
+- [ ] Consent and suppression query tested with a sample export.
+- [ ] Variables validated for empty, long and unexpected values.
+- [ ] Buttons and URLs tested in a controlled environment.
+- [ ] Webhook events stored with an idempotent event key.
+- [ ] Rollback copy and audience stop procedure documented.
+
+## Sources and limits
+
+This article uses official Meta and TRAI references plus original implementation analysis. It does not measure approval rates, delivery quality or customer outcomes. Recheck the sources on publication and mark the snapshot date.
+

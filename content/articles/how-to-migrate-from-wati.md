@@ -1,0 +1,86 @@
+---
+title: 'How to Migrate from Wati: A Practical WhatsApp Platform Runbook'
+slug: how-to-migrate-from-wati
+description: >-
+  A step-by-step Wati migration runbook covering WhatsApp account ownership,
+  number continuity, templates, automations, team inboxes, integrations, testing
+  and rollback.
+seoTitle: How to Migrate from Wati | WhatsApp API Migration Guide
+seoDescription: >-
+  Learn how to plan a Wati migration with asset inventory, templates, workflows,
+  webhooks, consent, team operations, testing and an evidence-based rollback
+  plan.
+author: Vaiket Research & Editorial
+category: Comparisons
+tags:
+  - Wati Migration
+  - WhatsApp API
+  - Migration
+  - Workflow Automation
+researchCutoff: '2026-11-25'
+image: /futuristic-neon-whatsapp-glass-interface.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# How to Migrate from Wati: A Practical WhatsApp Platform Runbook
+
+*Research snapshot: 25 November 2026.*
+
+**Editorial disclosure:** Wati migration outcomes depend on the Meta account structure, number ownership, contract, destination provider and current Meta procedures. This guide is a planning runbook, not a promise that a number, history or template approval will transfer automatically.
+
+## Why Wati migration needs a runbook
+
+Changing the dashboard is easy; changing the operating system is not. Document the WABA, phone number, admins, templates, contacts, opt-outs, automations, webhooks, team assignments, open conversations, integrations, reports and billing assumptions before selecting a destination.
+
+Wati's [pricing structure documentation](https://support.wati.io/en/articles/11462993-understanding-wati-s-pricing-structure) shows why plan, seat and message components should be recorded separately. Meta's [WhatsApp Platform overview](https://developers.facebook.com/documentation/business-messaging/whatsapp/overview) remains the source for API and account concepts.
+
+## Pre-migration inventory
+
+### Identity and permissions
+
+Capture the business account IDs, administrators, recovery email, number status, provider contacts and any partner permissions. Confirm whether the customer or an agency is the owner. If the destination cannot identify the owner, pause the migration.
+
+### Templates and content
+
+Export template names, language, category, variables, examples, approval state and last-used workflow. Recreate a mapping table rather than copying text into a new system without its purpose and consent rule.
+
+### Automations and data
+
+For every trigger, record the data source, wait time, action, suppression condition, human handoff and retry behaviour. Export contact identity, consent, opt-out, source, tags and business status. Do not import promotional contacts without their lawful permission and suppression history.
+
+## Cutover plan
+
+1. Choose a low-risk workflow and freeze changes.
+2. Set up the destination account, roles and webhook receiver.
+3. Recreate templates and test variables.
+4. Import a small, consented cohort.
+5. Test inbound, outbound, opt-out, failure, transfer and export.
+6. Compare delivery, response, manual work and cost with the Wati baseline.
+7. Move the next workflow only after the first passes its stop rules.
+
+Prevent duplicate sends by assigning each workflow one owner and one outbound system during the pilot.
+
+## If the destination is Vaiket
+
+Ask Vaiket to confirm the current WABA onboarding process, number ownership, template migration support, webhook/API surface, collaboration features, integrations, export and current pricing. Vaiket's verified direction covers WhatsApp communication, automation, team collaboration and developer integrations, while AI telecalling, RCS and Agentic AI require capability-by-capability confirmation.
+
+## Rollback and retention
+
+Keep the old configuration in a secure, read-only state until customer support, billing and retention requirements are satisfied. Define rollback conditions such as missing opt-outs, event loss, duplicate messages, unexpected Meta/provider charges or unresolved queue ownership. A rollback plan without credentials and data backups is not a rollback plan.
+
+## Cutover acceptance criteria
+
+The migration is complete only when the team can identify the number owner, retrieve required records, send an approved template, receive delivery events, suppress an opted-out contact and export the new data. Test a failed send and a duplicate webhook before switching the primary workflow. Retain the old account's contractual and operational records according to the business's retention policy; do not assume a platform export is a legal archive.
+
+Compare the destination's current terms with the [Vaiket docs](https://app.vaiket.com/docs) and [pricing page](https://www.vaiket.com/in/pricing). Ask for written confirmation of number ownership, template migration and support escalation before scheduling the cutover.
+
+## Sources and further reading
+
+- [Meta WhatsApp Business Platform overview](https://developers.facebook.com/documentation/business-messaging/whatsapp/overview)
+- [Wati pricing structure](https://support.wati.io/en/articles/11462993-understanding-wati-s-pricing-structure)
+- [Vaiket vs Wati](/posts/vaiket-vs-wati)
+- [WhatsApp API provider guide](/posts/best-whatsapp-business-api-providers-india)
+- [WhatsApp pricing model](/posts/whatsapp-business-api-pricing-india)

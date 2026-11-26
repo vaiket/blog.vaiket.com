@@ -1,0 +1,59 @@
+---
+title: 'AI Voice Agent Cost Model in India: Minutes, Transfers and Operations'
+slug: ai-voice-agent-cost-model-india
+description: >-
+  A practical cost model for Indian AI voice agents including telephony minutes,
+  speech processing, transfers, retries, recordings and human operations.
+seoTitle: AI Voice Agent Cost India | Complete Cost Model
+seoDescription: >-
+  Estimate AI voice-agent cost in India using telephony, speech, model,
+  recording, transfer, support and failure assumptions.
+author: Vaiket Research & Editorial
+category: AI Telecalling
+tags:
+  - AI Voice
+  - Pricing
+  - Cost Model
+  - Telecalling
+researchCutoff: '2026-11-26'
+image: /luminous-ai-wave-mesh.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# AI Voice Agent Cost Model in India: Minutes, Transfers and Operations
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Prices vary by provider, route, model, commitment, taxes and account. This is a budgeting framework, not a current price quote or benchmark.
+
+## Separate the cost layers
+
+Model telephony access, inbound or outbound minutes, speech-to-text, text-to-speech, language or model usage, recording and storage, transfer minutes, SMS or WhatsApp follow-up, platform subscription, implementation, monitoring, QA and human support separately. A provider's “per-minute” number may exclude one or more of these layers.
+
+Use a volume table with attempts, answered calls, average connected minutes, transfer rate, retry rate, recording retention and support minutes. Include tax treatment and minimum commitments. Show the assumptions beside every result so a buyer can replace them with a quote.
+
+## Cost per useful outcome
+
+Calculate cost per completed task or qualified handoff, not only cost per dial. A low answer rate can make an inexpensive minute expensive per useful conversation. Conversely, a longer call may be acceptable if it prevents repeat contact or captures the fields a human needs.
+
+Run conservative, expected and fallback-heavy scenarios. Include model re-prompts, language clarification, failed webhooks, human callback and manual correction. Do not count a hypothetical employee-hour saving as cash saving unless the business can actually redeploy that capacity.
+
+## Procurement questions
+
+Ask for audio and transcript retention, number and caller-ID charges, concurrent-call limits, transfer pricing, supported languages, recording controls, webhook limits, support and cancellation terms. Request a sandbox and test the same script on real network conditions. Exotel's [voice AI SIP documentation](https://support.exotel.com/support/solutions/articles/3000133452-flow-and-api-configuration-guide-for-voice-ai-contact-centre-platforms-via-exotel-virtual-sip-trunk) shows why a voice route and AI layer should be evaluated separately.
+
+## Spreadsheet fields
+
+Include monthly attempts, answer rate, connected minutes, average duration, transfer percentage, retry percentage, speech and model units, recording days, support minutes, implementation hours, tax, platform fee and contingency. Calculate cost per answered call and per completed business outcome. Keep provider quote date and currency beside every input so stale estimates are visible.
+
+## Vaiket boundary
+
+Vaiket can be evaluated when its current AI Telecalling and automation surfaces match the workflow. Confirm current pricing, minutes, integrations and support in [API documentation](https://app.vaiket.com/docs). No specific cost or savings claim is made.
+
+## Sources and limits
+
+Provider technical documentation and original cost-model analysis inform this draft. Replace estimates with current written quotes before procurement.
+

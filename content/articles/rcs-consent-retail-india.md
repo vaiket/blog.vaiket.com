@@ -1,0 +1,63 @@
+---
+title: 'RCS Consent for Indian Retail: Audience, Fallback and Suppression Design'
+slug: rcs-consent-retail-india
+description: >-
+  A practical consent and suppression design for Indian retail teams using RCS
+  campaigns and SMS fallback.
+seoTitle: RCS Consent India Retail | Fallback and Suppression Guide
+seoDescription: >-
+  Design RCS retail consent in India with source, purpose, audience, opt-out,
+  fallback and audit evidence before launching campaigns.
+author: Vaiket Research & Editorial
+category: RCS
+tags:
+  - RCS Consent
+  - Retail
+  - SMS Fallback
+  - Suppression
+researchCutoff: '2026-11-26'
+image: /neon-ai-commerce-landscape.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# RCS Consent for Indian Retail: Audience, Fallback and Suppression Design
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** Consent and commercial communication requirements depend on purpose, channel, operator and current regulation. Obtain route-specific legal review.
+
+## Consent must travel with the audience
+
+Store source, timestamp, purpose, language, channel, campaign scope and suppression state. If RCS is unavailable and the message falls back to SMS, apply the fallback channel's rules rather than assuming the RCS permission automatically transfers.
+
+Google explains that RCS agents can exchange messages and events and that SMS fallback may be used when RCS is unsupported in its [RCS workflow guide](https://developers.google.com/business-communications/rcs-business-messaging/guides/get-started/how-it-works). TRAI maintains the current [commercial communications regulations](https://www.trai.gov.in/release-publication/regulations); use the applicable amendment and professional advice.
+
+## Suppression controls
+
+- Check suppression immediately before send.
+- Apply opt-out to the customer identity across linked channels where the purpose requires it.
+- Store the event and source of the suppression.
+- Prevent imports from silently reactivating a contact.
+- Give operators a visible stop control.
+
+Test RCS-supported, RCS-unsupported, opted-out, duplicate and shared-number cases. A campaign should fail closed when consent state is unknown.
+
+## Consent data model and fallback
+
+Store consent source, timestamp, channel, purpose, language, notice version, contact identifier and withdrawal event. Perform the suppression check immediately before send, not only during audience export. Use an immutable event trail for changes while limiting who can read the underlying number.
+
+Define separate policy for transactional updates, service conversations and marketing. A fallback should preserve the user's choice and minimum necessary content; it should not silently turn an opted-out rich message into promotional SMS. Record why fallback occurred and which consent rule was applied.
+
+Test a new subscriber, expired consent, a shared number, regional-language preference, duplicate import, blocked contact and withdrawal while a campaign is queued. Review the message, landing page, unsubscribe path and support handoff. Availability can vary by market and device, so treat it as a runtime condition rather than a universal promise.
+
+## Vaiket boundary
+
+Evaluate Vaiket's orchestration and automation only after confirming current RCS routes, consent controls and event handling. No live RCS reach claim is made.
+
+## Sources and limits
+
+Official Google and TRAI references support this original consent design. Recheck both before a commercial launch.
+

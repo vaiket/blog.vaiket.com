@@ -1,0 +1,59 @@
+---
+title: 'RCS Campaign Analytics in India: Measuring Delivery, Interaction and Fallback'
+slug: rcs-campaign-analytics-india
+description: >-
+  A practical measurement framework for RCS campaigns in India covering
+  delivery, rich-card interaction, replies, fallback and business outcomes.
+seoTitle: RCS Campaign Analytics India | Delivery and Fallback Metrics
+seoDescription: >-
+  Measure RCS Business Messaging campaigns in India with event taxonomies for
+  delivery, reads, clicks, replies, fallback, opt-outs and business outcomes.
+author: Vaiket Research & Editorial
+category: RCS
+tags:
+  - RCS Analytics
+  - RCS Business Messaging
+  - Campaign Measurement
+  - Fallback
+researchCutoff: '2026-11-26'
+image: /neon-ai-commerce-landscape.png
+status: published
+reviewStatus: editorial approved
+publishedAt: '2026-11-26'
+updatedAt: '2026-11-26'
+---
+
+# RCS Campaign Analytics in India: Measuring Delivery, Interaction and Fallback
+
+*Research snapshot: 26 November 2026.*
+
+**Editorial disclosure:** RCS reporting varies by provider, agent and carrier. This is an event and measurement framework, not a reach, click-through or conversion benchmark.
+
+## Build an event taxonomy first
+
+Separate technical events from business outcomes. Technical events can include accepted, delivered, read, replied, failed, expired and fallback-sent. Interaction events can include suggestion tap, rich-card tap, phone action and web action. Business events can include verified lead, appointment, payment handoff or support resolution.
+
+Google's [RCS send-message guide](https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send) documents message requests and media or rich-card structures. The [RCS workflow guide](https://developers.google.com/business-communications/rcs-business-messaging/guides/get-started/how-it-works) explains how responses and events are exchanged through webhooks. Map provider event names to an internal taxonomy instead of placing raw vendor labels directly into dashboards.
+
+## Metrics that answer useful questions
+
+| Question | Metric | Warning |
+|---|---|---|
+| Did the message reach a supported endpoint? | Delivered / accepted | Do not treat accepted as delivered |
+| Did the customer see it? | Read / delivered | Device and privacy behaviour can differ |
+| Did the experience help? | Action or reply / read | A tap is not a sale |
+| Did fallback protect reach? | Fallback delivered / RCS attempted | Compare content and consent rules |
+| Did the campaign work? | Verified outcome / eligible audience | Define attribution before launch |
+
+## Experiment safely
+
+Keep the audience, offer, timing and attribution window explicit. Compare a channel or message variation only when the audience is eligible and suppression logic is unchanged. Preserve failed events and replay IDs. A dashboard that hides fallback and opt-outs can make a campaign look better than it is.
+
+## Vaiket fit
+
+Vaiket can be evaluated as an orchestration and automation layer if the specific RCS route, event coverage and reporting are available. Confirm current scope through the [Vaiket RCS product page](/product/rcs-business-messaging) and documentation before promising an analytics feature.
+
+## Sources and limits
+
+This guide uses official Google references and original measurement design. It does not report Indian carrier reach, campaign results or Vaiket performance.
+
